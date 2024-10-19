@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 } */
+
+.usertable{
+  @apply border border-black
+}
+.usertable th{
+  @apply border border-black font-semibold p-4 text-red-500 text-2xl
+}
+.usertable td{
+  @apply border text-center  border-black p-6 text-xl text-[#94618E] font-semibold
+}
