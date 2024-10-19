@@ -7,9 +7,23 @@ import { FaEye } from "react-icons/fa";
 
 function Staff() {
   const [showdropdown, setShowdropdown] = useState(false);
+  const [status,setStatus]=useState('Pending')
 
   function handleMouseEnter() {
     setShowdropdown(!showdropdown);
+  }
+
+  function changeStatusColor(status){
+
+    switch(status){
+      case 'Pending': {
+       return  'text-red-500'
+      }
+      case 'success':{
+        return 'text-green-500'
+      }
+
+    }
   }
 
   return (
@@ -76,24 +90,24 @@ function Staff() {
          p-4 rounded-2xl border-l-[15px] border-l-black
          flex justify-between items-center">
 
-          <div className="w-[500px] text-3xl  p-7 text-black font-bold">
-            <span className="text-white">Mon <span className="text-black ">10</span></span>
+          <div className="w-[500px] text-3xl p-7 text-black ">
+            <span className="text-white">Mon 10 </span>
           </div>
 
-          <div className="w-[700px] text-2xl  text-white flex flex-col">
+          <div className="w-[700px] text-2xl  text-white  flex flex-col">
             <span>
               242, 9th Main Rd, Jayanagar East, Jaya Nagar 1st Block, Jayanagar,
               Bengaluru, Karnataka 560011, India 01:00PM - 05:00 PM
             </span>
-            <span className="text-black font-bold mt-2">Duration : 4 hrs</span>
+            <span className="text-black text-xl font-bold mt-2">Duration : 4 hrs</span>
           </div>
 
-          <div className="w-[500px] text-center text-black font-bold">
-            <span>Pending</span>
+          <div className="w-[500px] text-center ">
+            <span className='bg-[#F8EEE7] text-red-500 font-medium p-3 rounded-full text-xl'>Pending</span>
           </div>
 
-          <div className="w-[100px] text-white font-bold text-3xl">
-            <FaEye/>
+          <div className="w-[100px] text-black text-3xl">
+            <FaEye className="bg-[#F8EEE7] cursor-pointer text-green-500 font-semibold w-[50px] text-2xl rounded-full"/>
           </div>
         </div>
         
@@ -102,24 +116,24 @@ function Staff() {
          p-4 rounded-2xl border-l-[15px] border-l-black
          flex justify-between items-center">
 
-          <div className="w-[500px] text-3xl p-7 text-black font-bold">
-            <span className="text-white">Mon <span className="text-black">10</span></span>
+          <div className="w-[500px] text-3xl p-7 text-black ">
+            <span className="text-white">Mon 10 </span>
           </div>
 
-          <div className="w-[700px] text-2xl  text-white flex flex-col">
+          <div className="w-[700px] text-2xl  text-white  flex flex-col">
             <span>
               242, 9th Main Rd, Jayanagar East, Jaya Nagar 1st Block, Jayanagar,
               Bengaluru, Karnataka 560011, India 01:00PM - 05:00 PM
             </span>
-            <span className="text-black font-bold mt-2">Duration : 4 hrs</span>
+            <span className="text-black text-xl font-bold mt-2">Duration : 4 hrs</span>
           </div>
 
-          <div className="w-[500px] text-center text-black font-bold">
-            <span>Pending</span>
+          <div className="w-[500px] text-center ">
+            <span className="bg-[#F8EEE7] text-red-500 font-medium p-3 rounded-full text-xl">Pending</span>
           </div>
 
-          <div className="w-[100px] text-white font-bold text-3xl">
-            <FaEye/>
+          <div className="w-[100px] text-black font-bold text-3xl">
+            <FaEye className="bg-[#F8EEE7] text-green-500 font-semibold w-[50px] text-2xl rounded-full"/>
           </div>
         </div>
 
@@ -129,24 +143,24 @@ function Staff() {
          p-4 rounded-2xl border-l-[15px] border-l-black
          flex justify-between items-center">
 
-          <div className="w-[500px] text-3xl p-7 text-black font-bold">
-            <span className="text-white">Mon <span className="text-black">10</span></span>
+          <div className="w-[500px] text-3xl p-7 text-black ">
+            <span className="text-white">Mon 10</span>
           </div>
 
-          <div className="w-[700px] text-2xl  text-white flex flex-col">
+          <div className="w-[700px] text-2xl  text-white  flex flex-col">
             <span>
               242, 9th Main Rd, Jayanagar East, Jaya Nagar 1st Block, Jayanagar,
               Bengaluru, Karnataka 560011, India 01:00PM - 05:00 PM
             </span>
-            <span className="text-black font-bold mt-2">Duration : 4 hrs</span>
+            <span className="text-black  font-bold text-xl  mt-2 ">Duration : 4 hrs</span>
           </div>
 
-          <div className="w-[500px] text-center text-black font-bold">
-            <span>Pending</span>
+          <div className="w-[500px] text-center ">
+            <span className="bg-[#F8EEE7] text-red-500 font-medium p-3 rounded-full text-xl">Pending</span>
           </div>
 
-          <div className="w-[100px] text-white font-bold text-3xl">
-            <FaEye/>
+          <div className="w-[100px] text-black text-3xl">
+            <FaEye className="bg-[#F8EEE7] text-green-500 font-semibold w-[50px] text-2xl rounded-full"/>
           </div>
         </div>
       </div>

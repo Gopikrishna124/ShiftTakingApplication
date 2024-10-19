@@ -4,11 +4,12 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import ResetPassword from "./Pages/ResetPassword/ResetPassword";
 import MyShifts from "./Pages/MyShifts/MyShifts";
-import Shift from "./Pages/Shift/Shift";
+
 import Report from "./Pages/Report/Report";
 import Staff from "./Pages/Staff/Staff";
 import Account from "./Pages/Account/Account";
 import UpdatePassword from "./Pages/UpdatePassword/UpdatePassword";
+import ShiftDetails from "./Pages/ShiftDetails/ShiftDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,7 +31,7 @@ function App() {
     },
     {
       path: "/shift/:id",
-      element: <Shift />,
+      element: <ShiftDetails/>,
     },
     {
       path: "/report",
